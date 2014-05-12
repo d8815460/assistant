@@ -43,4 +43,64 @@
     // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
 }
 
+
+#pragma mark - presentWelcomeViewControllerAnimated
+- (void)presentWelcomeViewControllerAnimated:(BOOL)animated {
+    UIStoryboard *storybord = [UIStoryboard storyboardWithName:@"Main" bundle:[NSBundle mainBundle]];
+//    AyiWellcomeViewController *welcomeVC = (AyiWellcomeViewController *)[storybord instantiateViewControllerWithIdentifier:@"welcome"];
+//    self.window.rootViewController = welcomeVC;
+}
+#pragma mark - presentWelcomeViewController
+- (void)presentWelcomeViewController {
+    [self presentWelcomeViewControllerAnimated:YES];
+}
+
+#pragma mark - 第一次登入轉場至會員第一次設定頁
+- (void)presentFirstSignInViewController{
+    UIStoryboard *mainStoryboard = [UIStoryboard storyboardWithName:@"Main" bundle: nil];
+//    SetProfileViewController *firstSign = (SetProfileViewController *)[mainStoryboard instantiateViewControllerWithIdentifier:@"setProfile"];
+//    firstSign.navigationItem.leftBarButtonItem = nil;
+//    self.window.rootViewController = firstSign;
+    [self.window makeKeyAndVisible];
+}
+
+#pragma mark - 轉場至Google Map
+- (void)presentGoogleMapController {
+    UIStoryboard *storybord = [UIStoryboard storyboardWithName:@"Main" bundle:[NSBundle mainBundle]];
+    UINavigationController *googleMap = (UINavigationController *)[storybord instantiateViewControllerWithIdentifier:@"mapNavigation"];
+    self.window.rootViewController = googleMap;
+    [self.window makeKeyAndVisible];
+}
+
+#pragma mark - 登出
+- (void)logOut{
+    // clear cache
+    [[CMCache sharedCache] clear];
+    
+    // clear NSUserDefaults
+    [[NSUserDefaults standardUserDefaults] removeObjectForKey:kPAPUserDefaultsCacheFacebookFriendsKey];
+    [[NSUserDefaults standardUserDefaults] removeObjectForKey:kPAPUserDefaultsActivityFeedViewControllerLastRefreshKey];
+    [[NSUserDefaults standardUserDefaults] synchronize];
+    
+    NSLog(@"install 4");
+    [[PFInstallation currentInstallation] setObject:@[@""] forKey:kPAPInstallationChannelsKey];
+    [[PFInstallation currentInstallation] removeObjectForKey:kPAPInstallationUserKey];
+    [[PFInstallation currentInstallation] removeObjectForKey:@"channels"];
+    [[PFInstallation currentInstallation] removeObjectForKey:@"deviceToken"];
+    [[PFInstallation currentInstallation] saveInBackground];
+    
+    // Clear all caches
+    [PFQuery clearAllCachedResults];
+    
+    //要把用戶名稱刪除
+    NSUserDefaults *userDefaults = [NSUserDefaults standardUserDefaults];
+    [userDefaults removeObjectForKey:kCMUserNameString];
+    [userDefaults removeObjectForKey:@"mediumImage"];
+    [userDefaults removeObjectForKey:@"smallRoundedImage"];
+    [userDefaults synchronize];
+    [PFUser logOut];
+    
+    [self presentWelcomeViewController];
+}
+
 @end

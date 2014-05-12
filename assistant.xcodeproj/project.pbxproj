@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		48AE732B592C4229AA5EB441 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 561BE9107485492980A5A284 /* libPods.a */; };
-		FA15AC181908CE2600A50B68 /* JSONKit.m in Sources */ = {isa = PBXBuildFile; fileRef = FA15AC171908CE2600A50B68 /* JSONKit.m */; };
+		FA15AC181908CE2600A50B68 /* JSONKit.m in Sources */ = {isa = PBXBuildFile; fileRef = FA15AC171908CE2600A50B68 /* JSONKit.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		FA15AC191908CE2600A50B68 /* JSONKit.m in Sources */ = {isa = PBXBuildFile; fileRef = FA15AC171908CE2600A50B68 /* JSONKit.m */; };
 		FA15AC201908CE3700A50B68 /* UIImage+AlphaAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = FA15AC1B1908CE3700A50B68 /* UIImage+AlphaAdditions.m */; };
 		FA15AC211908CE3700A50B68 /* UIImage+AlphaAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = FA15AC1B1908CE3700A50B68 /* UIImage+AlphaAdditions.m */; };
@@ -30,7 +30,6 @@
 		FA15AC3F1908CE7400A50B68 /* GoogleMaps.bundle in Resources */ = {isa = PBXBuildFile; fileRef = FA15AC3A1908CE7400A50B68 /* GoogleMaps.bundle */; };
 		FA15AC451908CE9000A50B68 /* AyiWellcomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FA15AC421908CE9000A50B68 /* AyiWellcomeViewController.m */; };
 		FA15AC461908CE9000A50B68 /* AyiWellcomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FA15AC421908CE9000A50B68 /* AyiWellcomeViewController.m */; };
-		FA15AC471908CE9000A50B68 /* AyiLoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FA15AC441908CE9000A50B68 /* AyiLoginViewController.m */; };
 		FA15AC481908CE9000A50B68 /* AyiLoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FA15AC441908CE9000A50B68 /* AyiLoginViewController.m */; };
 		FA15AC4C1908CEC700A50B68 /* AyiSignUpViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FA15AC4B1908CEC700A50B68 /* AyiSignUpViewController.m */; };
 		FA15AC4D1908CEC700A50B68 /* AyiSignUpViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FA15AC4B1908CEC700A50B68 /* AyiSignUpViewController.m */; };
@@ -38,6 +37,22 @@
 		FA15AC531908CF0C00A50B68 /* SetProfileViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FA15AC511908CF0C00A50B68 /* SetProfileViewController.m */; };
 		FA15AC561908CF1300A50B68 /* ConnectCreditCardViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FA15AC551908CF1300A50B68 /* ConnectCreditCardViewController.m */; };
 		FA15AC571908CF1300A50B68 /* ConnectCreditCardViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FA15AC551908CF1300A50B68 /* ConnectCreditCardViewController.m */; };
+		FA199E111920B0AB00A7A60B /* AyiLoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FA15AC441908CE9000A50B68 /* AyiLoginViewController.m */; };
+		FA199E131920B7AC00A7A60B /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FA199E121920B7AC00A7A60B /* AVFoundation.framework */; };
+		FA199E151920B7B100A7A60B /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FA199E141920B7B100A7A60B /* CoreData.framework */; };
+		FA199E171920B7B800A7A60B /* CoreFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FA199E161920B7B800A7A60B /* CoreFoundation.framework */; };
+		FA199E191920B7C700A7A60B /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FA199E181920B7C700A7A60B /* CoreLocation.framework */; };
+		FA199E1B1920B7CD00A7A60B /* CoreText.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FA199E1A1920B7CD00A7A60B /* CoreText.framework */; };
+		FA199E1D1920B7D400A7A60B /* GLKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FA199E1C1920B7D400A7A60B /* GLKit.framework */; };
+		FA199E1F1920B7DC00A7A60B /* ImageIO.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FA199E1E1920B7DC00A7A60B /* ImageIO.framework */; };
+		FA199E211920B7E500A7A60B /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FA199E201920B7E500A7A60B /* OpenGLES.framework */; };
+		FA199E231920B7F000A7A60B /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FA199E221920B7F000A7A60B /* QuartzCore.framework */; };
+		FA199E251920B7F900A7A60B /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FA199E241920B7F900A7A60B /* SystemConfiguration.framework */; };
+		FA199E271920B80700A7A60B /* libc++.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = FA199E261920B80700A7A60B /* libc++.dylib */; };
+		FA199E291920B80F00A7A60B /* libicucore.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = FA199E281920B80F00A7A60B /* libicucore.dylib */; };
+		FA199E2B1920B81600A7A60B /* libobjc.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = FA199E2A1920B81600A7A60B /* libobjc.dylib */; };
+		FA199E2D1920B81F00A7A60B /* libz.1.2.5.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = FA199E2C1920B81F00A7A60B /* libz.1.2.5.dylib */; };
+		FA199E2F1920B83300A7A60B /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FA199E2E1920B83300A7A60B /* MobileCoreServices.framework */; };
 		FA3D09DE1908C2DD00D697D1 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FA3D09DD1908C2DD00D697D1 /* Foundation.framework */; };
 		FA3D09E01908C2DD00D697D1 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FA3D09DF1908C2DD00D697D1 /* CoreGraphics.framework */; };
 		FA3D09E21908C2DD00D697D1 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FA3D09E11908C2DD00D697D1 /* UIKit.framework */; };
@@ -95,6 +110,21 @@
 		FA15AC511908CF0C00A50B68 /* SetProfileViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SetProfileViewController.m; sourceTree = "<group>"; };
 		FA15AC541908CF1300A50B68 /* ConnectCreditCardViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ConnectCreditCardViewController.h; sourceTree = "<group>"; };
 		FA15AC551908CF1300A50B68 /* ConnectCreditCardViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ConnectCreditCardViewController.m; sourceTree = "<group>"; };
+		FA199E121920B7AC00A7A60B /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		FA199E141920B7B100A7A60B /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		FA199E161920B7B800A7A60B /* CoreFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreFoundation.framework; path = System/Library/Frameworks/CoreFoundation.framework; sourceTree = SDKROOT; };
+		FA199E181920B7C700A7A60B /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		FA199E1A1920B7CD00A7A60B /* CoreText.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreText.framework; path = System/Library/Frameworks/CoreText.framework; sourceTree = SDKROOT; };
+		FA199E1C1920B7D400A7A60B /* GLKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GLKit.framework; path = System/Library/Frameworks/GLKit.framework; sourceTree = SDKROOT; };
+		FA199E1E1920B7DC00A7A60B /* ImageIO.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ImageIO.framework; path = System/Library/Frameworks/ImageIO.framework; sourceTree = SDKROOT; };
+		FA199E201920B7E500A7A60B /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
+		FA199E221920B7F000A7A60B /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		FA199E241920B7F900A7A60B /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		FA199E261920B80700A7A60B /* libc++.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libc++.dylib"; path = "usr/lib/libc++.dylib"; sourceTree = SDKROOT; };
+		FA199E281920B80F00A7A60B /* libicucore.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libicucore.dylib; path = usr/lib/libicucore.dylib; sourceTree = SDKROOT; };
+		FA199E2A1920B81600A7A60B /* libobjc.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libobjc.dylib; path = usr/lib/libobjc.dylib; sourceTree = SDKROOT; };
+		FA199E2C1920B81F00A7A60B /* libz.1.2.5.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.1.2.5.dylib; path = usr/lib/libz.1.2.5.dylib; sourceTree = SDKROOT; };
+		FA199E2E1920B83300A7A60B /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
 		FA3D09DA1908C2DD00D697D1 /* assistant.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = assistant.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FA3D09DD1908C2DD00D697D1 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		FA3D09DF1908C2DD00D697D1 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -122,8 +152,23 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FA3D09E01908C2DD00D697D1 /* CoreGraphics.framework in Frameworks */,
+				FA199E2F1920B83300A7A60B /* MobileCoreServices.framework in Frameworks */,
+				FA199E2D1920B81F00A7A60B /* libz.1.2.5.dylib in Frameworks */,
+				FA199E2B1920B81600A7A60B /* libobjc.dylib in Frameworks */,
+				FA199E291920B80F00A7A60B /* libicucore.dylib in Frameworks */,
+				FA199E271920B80700A7A60B /* libc++.dylib in Frameworks */,
 				FA3D09E21908C2DD00D697D1 /* UIKit.framework in Frameworks */,
+				FA199E251920B7F900A7A60B /* SystemConfiguration.framework in Frameworks */,
+				FA199E231920B7F000A7A60B /* QuartzCore.framework in Frameworks */,
+				FA199E211920B7E500A7A60B /* OpenGLES.framework in Frameworks */,
+				FA199E1F1920B7DC00A7A60B /* ImageIO.framework in Frameworks */,
+				FA199E1D1920B7D400A7A60B /* GLKit.framework in Frameworks */,
+				FA199E1B1920B7CD00A7A60B /* CoreText.framework in Frameworks */,
+				FA199E191920B7C700A7A60B /* CoreLocation.framework in Frameworks */,
+				FA3D09E01908C2DD00D697D1 /* CoreGraphics.framework in Frameworks */,
+				FA199E171920B7B800A7A60B /* CoreFoundation.framework in Frameworks */,
+				FA199E151920B7B100A7A60B /* CoreData.framework in Frameworks */,
+				FA199E131920B7AC00A7A60B /* AVFoundation.framework in Frameworks */,
 				FA3D09DE1908C2DD00D697D1 /* Foundation.framework in Frameworks */,
 				FA15AC3C1908CE7400A50B68 /* GoogleMaps.framework in Frameworks */,
 				48AE732B592C4229AA5EB441 /* libPods.a in Frameworks */,
@@ -268,6 +313,21 @@
 		FA3D09DC1908C2DD00D697D1 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				FA199E2E1920B83300A7A60B /* MobileCoreServices.framework */,
+				FA199E2C1920B81F00A7A60B /* libz.1.2.5.dylib */,
+				FA199E2A1920B81600A7A60B /* libobjc.dylib */,
+				FA199E281920B80F00A7A60B /* libicucore.dylib */,
+				FA199E261920B80700A7A60B /* libc++.dylib */,
+				FA199E241920B7F900A7A60B /* SystemConfiguration.framework */,
+				FA199E221920B7F000A7A60B /* QuartzCore.framework */,
+				FA199E201920B7E500A7A60B /* OpenGLES.framework */,
+				FA199E1E1920B7DC00A7A60B /* ImageIO.framework */,
+				FA199E1C1920B7D400A7A60B /* GLKit.framework */,
+				FA199E1A1920B7CD00A7A60B /* CoreText.framework */,
+				FA199E181920B7C700A7A60B /* CoreLocation.framework */,
+				FA199E161920B7B800A7A60B /* CoreFoundation.framework */,
+				FA199E141920B7B100A7A60B /* CoreData.framework */,
+				FA199E121920B7AC00A7A60B /* AVFoundation.framework */,
 				FA3D09DD1908C2DD00D697D1 /* Foundation.framework */,
 				FA3D09DF1908C2DD00D697D1 /* CoreGraphics.framework */,
 				FA3D09E11908C2DD00D697D1 /* UIKit.framework */,
@@ -283,7 +343,6 @@
 				FA15AC131908CD9700A50B68 /* Library */,
 				FA15AC271908CE5000A50B68 /* Utils */,
 				FA15AC381908CE6300A50B68 /* GoogleMap SDK */,
-				FA6C6816190E19BD002EDCA9 /* Menu */,
 				FA15AC401908CE8200A50B68 /* 0.0歡迎、登入畫面 */,
 				FA15AC491908CEB200A50B68 /* 0.1註冊 */,
 				FA15AC4F1908CEEE00A50B68 /* 0.2建立基本資料 */,
@@ -327,13 +386,6 @@
 				FA3D0A051908C2DD00D697D1 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
-		FA6C6816190E19BD002EDCA9 /* Menu */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			name = Menu;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -475,8 +527,8 @@
 				FA15AC361908CE5F00A50B68 /* Utils.m in Sources */,
 				FA15AC301908CE5F00A50B68 /* CMCache.m in Sources */,
 				FA3D09F41908C2DD00D697D1 /* ViewController.m in Sources */,
-				FA15AC471908CE9000A50B68 /* AyiLoginViewController.m in Sources */,
 				FA3D09EE1908C2DD00D697D1 /* AppDelegate.m in Sources */,
+				FA199E111920B0AB00A7A60B /* AyiLoginViewController.m in Sources */,
 				FA15AC241908CE3700A50B68 /* UIImage+RoundedCornerAdditions.m in Sources */,
 				FA15AC181908CE2600A50B68 /* JSONKit.m in Sources */,
 				FA15AC221908CE3700A50B68 /* UIImage+ResizeAdditions.m in Sources */,

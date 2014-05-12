@@ -12,4 +12,8 @@
 
 @property (strong, nonatomic) UIWindow *window;
 
+
+- (void)presentGoogleMapController;
+- (void)logOut;
+
 @end
