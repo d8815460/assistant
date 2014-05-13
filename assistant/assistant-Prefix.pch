@@ -17,5 +17,7 @@
     #import "CMUtility.h"
 #import "CMConstants.h"
 #import "CMCache.h"
+#import "UIImage+iPhone5.h"
+#import "UIColor+Alpha.h"
 
 #endif

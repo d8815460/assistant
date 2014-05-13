@@ -154,5 +154,17 @@ NSString *const kPAPInstallationUserKey = @"user";
 NSString *const kPAPInstallationChannelsKey = @"channels";
 
 
+NSUInteger const kPAWWallPostMaximumCharacterCount = 140;
 
+NSUInteger const kPAWWallPostsSearch = 20; // query limit for pins and tableviewcells
+
+// Parse API key constants:
+NSString * const kPAWParsePostsClassKey = @"Posts";
+NSString * const kPAWParseUserKey = @"user";
+NSString * const kPAWParseUsernameKey = @"username";
+NSString * const kPAWParseTextKey = @"text";
+NSString * const kPAWParseLocationKey = @"location";
+
+// UI strings:
+NSString * const kPAWWallCantViewPost = @"Can’t view post! Get closer.";
 

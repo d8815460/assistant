@@ -146,3 +146,19 @@ extern NSString *const kPAPPushPayloadPhotoObjectIdKey;
 extern NSString *const kPAPInstallationUserKey;
 extern NSString *const kPAPInstallationChannelsKey;
 
+
+
+extern NSUInteger const kPAWWallPostMaximumCharacterCount;
+
+extern NSUInteger const kPAWWallPostsSearch; // query limit for pins and tableviewcells
+
+// Parse API key constants:
+extern NSString * const kPAWParsePostsClassKey;
+extern NSString * const kPAWParseUserKey;
+extern NSString * const kPAWParseUsernameKey;
+extern NSString * const kPAWParseTextKey;
+extern NSString * const kPAWParseLocationKey;
+
+
+// UI strings:
+extern NSString * const kPAWWallCantViewPost;

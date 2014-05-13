@@ -53,13 +53,61 @@
 		FA199E2B1920B81600A7A60B /* libobjc.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = FA199E2A1920B81600A7A60B /* libobjc.dylib */; };
 		FA199E2D1920B81F00A7A60B /* libz.1.2.5.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = FA199E2C1920B81F00A7A60B /* libz.1.2.5.dylib */; };
 		FA199E2F1920B83300A7A60B /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FA199E2E1920B83300A7A60B /* MobileCoreServices.framework */; };
+		FA199E341920BB2400A7A60B /* NGTestTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = FA199E331920BB2400A7A60B /* NGTestTabBarController.m */; };
+		FA199E381920BB8700A7A60B /* MenuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FA199E371920BB8700A7A60B /* MenuViewController.m */; };
+		FA199E481920BBB400A7A60B /* AccelerationAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = FA199E3B1920BBB400A7A60B /* AccelerationAnimation.m */; };
+		FA199E491920BBB400A7A60B /* Evaluate.m in Sources */ = {isa = PBXBuildFile; fileRef = FA199E3D1920BBB400A7A60B /* Evaluate.m */; };
+		FA199E4A1920BBB400A7A60B /* REBackgroundView.m in Sources */ = {isa = PBXBuildFile; fileRef = FA199E3F1920BBB400A7A60B /* REBackgroundView.m */; };
+		FA199E4B1920BBB400A7A60B /* RESideMenu.m in Sources */ = {isa = PBXBuildFile; fileRef = FA199E411920BBB400A7A60B /* RESideMenu.m */; };
+		FA199E4C1920BBB400A7A60B /* RESideMenuCell.m in Sources */ = {isa = PBXBuildFile; fileRef = FA199E431920BBB400A7A60B /* RESideMenuCell.m */; };
+		FA199E4D1920BBB400A7A60B /* RESideMenuItem.m in Sources */ = {isa = PBXBuildFile; fileRef = FA199E451920BBB400A7A60B /* RESideMenuItem.m */; };
+		FA199E4E1920BBB400A7A60B /* UIWindow+RESideMenuExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = FA199E471920BBB400A7A60B /* UIWindow+RESideMenuExtensions.m */; };
+		FA199E521920BBE800A7A60B /* DataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = FA199E511920BBE800A7A60B /* DataSource.m */; };
+		FA199E581920BC2200A7A60B /* ADVTheme.m in Sources */ = {isa = PBXBuildFile; fileRef = FA199E571920BC2200A7A60B /* ADVTheme.m */; };
+		FA199E5B1920BC2900A7A60B /* ADVDefaultTheme.m in Sources */ = {isa = PBXBuildFile; fileRef = FA199E5A1920BC2900A7A60B /* ADVDefaultTheme.m */; };
+		FA199E5E1920BC3000A7A60B /* ADVCustomTheme.m in Sources */ = {isa = PBXBuildFile; fileRef = FA199E5D1920BC3000A7A60B /* ADVCustomTheme.m */; };
+		FA199E651920BC6C00A7A60B /* UISearchBar+TextColor.m in Sources */ = {isa = PBXBuildFile; fileRef = FA199E621920BC6C00A7A60B /* UISearchBar+TextColor.m */; };
+		FA199E661920BC6C00A7A60B /* UIVisibleScopeSearchBar.m in Sources */ = {isa = PBXBuildFile; fileRef = FA199E641920BC6C00A7A60B /* UIVisibleScopeSearchBar.m */; };
+		FA199E6C1920BC9400A7A60B /* UIImage+iPhone5.m in Sources */ = {isa = PBXBuildFile; fileRef = FA199E691920BC9400A7A60B /* UIImage+iPhone5.m */; };
+		FA199E6D1920BC9400A7A60B /* UIImage+StackBlur.m in Sources */ = {isa = PBXBuildFile; fileRef = FA199E6B1920BC9400A7A60B /* UIImage+StackBlur.m */; };
+		FA199E711920BCA900A7A60B /* UIColor+Alpha.m in Sources */ = {isa = PBXBuildFile; fileRef = FA199E701920BCA900A7A60B /* UIColor+Alpha.m */; };
+		FA199E881920BD3000A7A60B /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = FA199E741920BD3000A7A60B /* LICENSE */; };
+		FA199E891920BD3000A7A60B /* NGTabBar.m in Sources */ = {isa = PBXBuildFile; fileRef = FA199E771920BD3000A7A60B /* NGTabBar.m */; };
+		FA199E8A1920BD3000A7A60B /* NGTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = FA199E791920BD3000A7A60B /* NGTabBarController.m */; };
+		FA199E8B1920BD3000A7A60B /* NGTabBarItem.m in Sources */ = {isa = PBXBuildFile; fileRef = FA199E7D1920BD3000A7A60B /* NGTabBarItem.m */; };
+		FA199E8C1920BD3000A7A60B /* UINavigationController+NGTabBarNavigationDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = FA199E811920BD3000A7A60B /* UINavigationController+NGTabBarNavigationDelegate.m */; };
+		FA199E8D1920BD3000A7A60B /* UIViewController+NGTabBarItem.m in Sources */ = {isa = PBXBuildFile; fileRef = FA199E831920BD3000A7A60B /* UIViewController+NGTabBarItem.m */; };
+		FA199E8E1920BD3000A7A60B /* README.mdown in Resources */ = {isa = PBXBuildFile; fileRef = FA199E871920BD3000A7A60B /* README.mdown */; };
+		FA199E951920C5AF00A7A60B /* CustomTabBarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FA199E941920C5AF00A7A60B /* CustomTabBarViewController.m */; };
+		FA199EA81920C67E00A7A60B /* tabbar-tab1.png in Resources */ = {isa = PBXBuildFile; fileRef = FA199E9A1920C67E00A7A60B /* tabbar-tab1.png */; };
+		FA199EA91920C67E00A7A60B /* tabbar-tab1@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = FA199E9B1920C67E00A7A60B /* tabbar-tab1@2x.png */; };
+		FA199EAA1920C67E00A7A60B /* tabbar-tab2.png in Resources */ = {isa = PBXBuildFile; fileRef = FA199E9C1920C67E00A7A60B /* tabbar-tab2.png */; };
+		FA199EAB1920C67E00A7A60B /* tabbar-tab2@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = FA199E9D1920C67E00A7A60B /* tabbar-tab2@2x.png */; };
+		FA199EAC1920C67E00A7A60B /* tabbar-tab3.png in Resources */ = {isa = PBXBuildFile; fileRef = FA199E9E1920C67E00A7A60B /* tabbar-tab3.png */; };
+		FA199EAD1920C67E00A7A60B /* tabbar-tab3@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = FA199E9F1920C67E00A7A60B /* tabbar-tab3@2x.png */; };
+		FA199EAE1920C67E00A7A60B /* tabbar-tab4.png in Resources */ = {isa = PBXBuildFile; fileRef = FA199EA01920C67E00A7A60B /* tabbar-tab4.png */; };
+		FA199EAF1920C67E00A7A60B /* tabbar-tab4@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = FA199EA11920C67E00A7A60B /* tabbar-tab4@2x.png */; };
+		FA199EB01920C67E00A7A60B /* tabbar-tab5.png in Resources */ = {isa = PBXBuildFile; fileRef = FA199EA21920C67E00A7A60B /* tabbar-tab5.png */; };
+		FA199EB11920C67E00A7A60B /* tabbar-tab5@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = FA199EA31920C67E00A7A60B /* tabbar-tab5@2x.png */; };
+		FA199EB41920C67E00A7A60B /* tabBarSelectionIndicator.png in Resources */ = {isa = PBXBuildFile; fileRef = FA199EA61920C67E00A7A60B /* tabBarSelectionIndicator.png */; };
+		FA199EB51920C67E00A7A60B /* tabBarSelectionIndicator@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = FA199EA71920C67E00A7A60B /* tabBarSelectionIndicator@2x.png */; };
+		FA199EBB1921F57300A7A60B /* buttonAdd.png in Resources */ = {isa = PBXBuildFile; fileRef = FA199EB91921F57300A7A60B /* buttonAdd.png */; };
+		FA199EBC1921F57300A7A60B /* buttonAdd@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = FA199EBA1921F57300A7A60B /* buttonAdd@2x.png */; };
+		FA199EC01921F58000A7A60B /* buttonAdd@2x~ipad.png in Resources */ = {isa = PBXBuildFile; fileRef = FA199EBE1921F58000A7A60B /* buttonAdd@2x~ipad.png */; };
+		FA199EC11921F58000A7A60B /* buttonAdd~ipad.png in Resources */ = {isa = PBXBuildFile; fileRef = FA199EBF1921F58000A7A60B /* buttonAdd~ipad.png */; };
+		FA199EC9192202A100A7A60B /* tabBarBackground.png in Resources */ = {isa = PBXBuildFile; fileRef = FA199EC7192202A100A7A60B /* tabBarBackground.png */; };
+		FA199ECA192202A100A7A60B /* tabBarBackground@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = FA199EC8192202A100A7A60B /* tabBarBackground@2x.png */; };
+		FA199ECD192209BB00A7A60B /* MainStoryboard_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FA199ECB192209BB00A7A60B /* MainStoryboard_iPad.storyboard */; };
+		FA199ECE192209BB00A7A60B /* MainStoryboard_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FA199ECC192209BB00A7A60B /* MainStoryboard_iPhone.storyboard */; };
+		FA199ED0192210EE00A7A60B /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FA199ECF192210EE00A7A60B /* Security.framework */; };
+		FA199ED2192210F900A7A60B /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FA199ED1192210F900A7A60B /* MapKit.framework */; };
+		FA199ED51922350700A7A60B /* NearByViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FA199ED41922350700A7A60B /* NearByViewController.m */; };
 		FA3D09DE1908C2DD00D697D1 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FA3D09DD1908C2DD00D697D1 /* Foundation.framework */; };
 		FA3D09E01908C2DD00D697D1 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FA3D09DF1908C2DD00D697D1 /* CoreGraphics.framework */; };
 		FA3D09E21908C2DD00D697D1 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FA3D09E11908C2DD00D697D1 /* UIKit.framework */; };
 		FA3D09E81908C2DD00D697D1 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = FA3D09E61908C2DD00D697D1 /* InfoPlist.strings */; };
 		FA3D09EA1908C2DD00D697D1 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = FA3D09E91908C2DD00D697D1 /* main.m */; };
 		FA3D09EE1908C2DD00D697D1 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = FA3D09ED1908C2DD00D697D1 /* AppDelegate.m */; };
-		FA3D09F11908C2DD00D697D1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FA3D09EF1908C2DD00D697D1 /* Main.storyboard */; };
 		FA3D09F41908C2DD00D697D1 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FA3D09F31908C2DD00D697D1 /* ViewController.m */; };
 		FA3D09F61908C2DD00D697D1 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FA3D09F51908C2DD00D697D1 /* Images.xcassets */; };
 		FA3D09FD1908C2DD00D697D1 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FA3D09FC1908C2DD00D697D1 /* XCTest.framework */; };
@@ -70,6 +118,13 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		FA199E901920BD3000A7A60B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FA199E841920BD3000A7A60B /* NGTabBarController.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 9B80B52D14EA8F7100B83FA0;
+			remoteInfo = NGTabBarController;
+		};
 		FA3D0A001908C2DD00D697D1 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = FA3D09D21908C2DD00D697D1 /* Project object */;
@@ -125,6 +180,85 @@
 		FA199E2A1920B81600A7A60B /* libobjc.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libobjc.dylib; path = usr/lib/libobjc.dylib; sourceTree = SDKROOT; };
 		FA199E2C1920B81F00A7A60B /* libz.1.2.5.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.1.2.5.dylib; path = usr/lib/libz.1.2.5.dylib; sourceTree = SDKROOT; };
 		FA199E2E1920B83300A7A60B /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
+		FA199E321920BB2400A7A60B /* NGTestTabBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NGTestTabBarController.h; sourceTree = "<group>"; };
+		FA199E331920BB2400A7A60B /* NGTestTabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NGTestTabBarController.m; sourceTree = "<group>"; };
+		FA199E361920BB8700A7A60B /* MenuViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MenuViewController.h; sourceTree = "<group>"; };
+		FA199E371920BB8700A7A60B /* MenuViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MenuViewController.m; sourceTree = "<group>"; };
+		FA199E3A1920BBB400A7A60B /* AccelerationAnimation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AccelerationAnimation.h; sourceTree = "<group>"; };
+		FA199E3B1920BBB400A7A60B /* AccelerationAnimation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AccelerationAnimation.m; sourceTree = "<group>"; };
+		FA199E3C1920BBB400A7A60B /* Evaluate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Evaluate.h; sourceTree = "<group>"; };
+		FA199E3D1920BBB400A7A60B /* Evaluate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Evaluate.m; sourceTree = "<group>"; };
+		FA199E3E1920BBB400A7A60B /* REBackgroundView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = REBackgroundView.h; sourceTree = "<group>"; };
+		FA199E3F1920BBB400A7A60B /* REBackgroundView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = REBackgroundView.m; sourceTree = "<group>"; };
+		FA199E401920BBB400A7A60B /* RESideMenu.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RESideMenu.h; sourceTree = "<group>"; };
+		FA199E411920BBB400A7A60B /* RESideMenu.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RESideMenu.m; sourceTree = "<group>"; };
+		FA199E421920BBB400A7A60B /* RESideMenuCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RESideMenuCell.h; sourceTree = "<group>"; };
+		FA199E431920BBB400A7A60B /* RESideMenuCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RESideMenuCell.m; sourceTree = "<group>"; };
+		FA199E441920BBB400A7A60B /* RESideMenuItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RESideMenuItem.h; sourceTree = "<group>"; };
+		FA199E451920BBB400A7A60B /* RESideMenuItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RESideMenuItem.m; sourceTree = "<group>"; };
+		FA199E461920BBB400A7A60B /* UIWindow+RESideMenuExtensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIWindow+RESideMenuExtensions.h"; sourceTree = "<group>"; };
+		FA199E471920BBB400A7A60B /* UIWindow+RESideMenuExtensions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIWindow+RESideMenuExtensions.m"; sourceTree = "<group>"; };
+		FA199E501920BBE800A7A60B /* DataSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DataSource.h; sourceTree = "<group>"; };
+		FA199E511920BBE800A7A60B /* DataSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DataSource.m; sourceTree = "<group>"; };
+		FA199E561920BC2200A7A60B /* ADVTheme.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ADVTheme.h; sourceTree = "<group>"; };
+		FA199E571920BC2200A7A60B /* ADVTheme.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ADVTheme.m; sourceTree = "<group>"; };
+		FA199E591920BC2900A7A60B /* ADVDefaultTheme.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ADVDefaultTheme.h; sourceTree = "<group>"; };
+		FA199E5A1920BC2900A7A60B /* ADVDefaultTheme.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ADVDefaultTheme.m; sourceTree = "<group>"; };
+		FA199E5C1920BC3000A7A60B /* ADVCustomTheme.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ADVCustomTheme.h; sourceTree = "<group>"; };
+		FA199E5D1920BC3000A7A60B /* ADVCustomTheme.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ADVCustomTheme.m; sourceTree = "<group>"; };
+		FA199E611920BC6C00A7A60B /* UISearchBar+TextColor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UISearchBar+TextColor.h"; sourceTree = "<group>"; };
+		FA199E621920BC6C00A7A60B /* UISearchBar+TextColor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UISearchBar+TextColor.m"; sourceTree = "<group>"; };
+		FA199E631920BC6C00A7A60B /* UIVisibleScopeSearchBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIVisibleScopeSearchBar.h; sourceTree = "<group>"; };
+		FA199E641920BC6C00A7A60B /* UIVisibleScopeSearchBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UIVisibleScopeSearchBar.m; sourceTree = "<group>"; };
+		FA199E681920BC9400A7A60B /* UIImage+iPhone5.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+iPhone5.h"; sourceTree = "<group>"; };
+		FA199E691920BC9400A7A60B /* UIImage+iPhone5.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+iPhone5.m"; sourceTree = "<group>"; };
+		FA199E6A1920BC9400A7A60B /* UIImage+StackBlur.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+StackBlur.h"; sourceTree = "<group>"; };
+		FA199E6B1920BC9400A7A60B /* UIImage+StackBlur.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+StackBlur.m"; sourceTree = "<group>"; };
+		FA199E6F1920BCA900A7A60B /* UIColor+Alpha.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+Alpha.h"; sourceTree = "<group>"; };
+		FA199E701920BCA900A7A60B /* UIColor+Alpha.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+Alpha.m"; sourceTree = "<group>"; };
+		FA199E741920BD3000A7A60B /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
+		FA199E761920BD3000A7A60B /* NGTabBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NGTabBar.h; sourceTree = "<group>"; };
+		FA199E771920BD3000A7A60B /* NGTabBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NGTabBar.m; sourceTree = "<group>"; };
+		FA199E781920BD3000A7A60B /* NGTabBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NGTabBarController.h; sourceTree = "<group>"; };
+		FA199E791920BD3000A7A60B /* NGTabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NGTabBarController.m; sourceTree = "<group>"; };
+		FA199E7A1920BD3000A7A60B /* NGTabBarControllerAnimation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NGTabBarControllerAnimation.h; sourceTree = "<group>"; };
+		FA199E7B1920BD3000A7A60B /* NGTabBarControllerDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NGTabBarControllerDelegate.h; sourceTree = "<group>"; };
+		FA199E7C1920BD3000A7A60B /* NGTabBarItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NGTabBarItem.h; sourceTree = "<group>"; };
+		FA199E7D1920BD3000A7A60B /* NGTabBarItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NGTabBarItem.m; sourceTree = "<group>"; };
+		FA199E7E1920BD3000A7A60B /* NGTabBarPosition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NGTabBarPosition.h; sourceTree = "<group>"; };
+		FA199E7F1920BD3000A7A60B /* Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Prefix.pch; sourceTree = "<group>"; };
+		FA199E801920BD3000A7A60B /* UINavigationController+NGTabBarNavigationDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UINavigationController+NGTabBarNavigationDelegate.h"; sourceTree = "<group>"; };
+		FA199E811920BD3000A7A60B /* UINavigationController+NGTabBarNavigationDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UINavigationController+NGTabBarNavigationDelegate.m"; sourceTree = "<group>"; };
+		FA199E821920BD3000A7A60B /* UIViewController+NGTabBarItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+NGTabBarItem.h"; sourceTree = "<group>"; };
+		FA199E831920BD3000A7A60B /* UIViewController+NGTabBarItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+NGTabBarItem.m"; sourceTree = "<group>"; };
+		FA199E841920BD3000A7A60B /* NGTabBarController.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; path = NGTabBarController.xcodeproj; sourceTree = "<group>"; };
+		FA199E871920BD3000A7A60B /* README.mdown */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README.mdown; sourceTree = "<group>"; };
+		FA199E931920C5AF00A7A60B /* CustomTabBarViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomTabBarViewController.h; sourceTree = "<group>"; };
+		FA199E941920C5AF00A7A60B /* CustomTabBarViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomTabBarViewController.m; sourceTree = "<group>"; };
+		FA199E9A1920C67E00A7A60B /* tabbar-tab1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "tabbar-tab1.png"; sourceTree = "<group>"; };
+		FA199E9B1920C67E00A7A60B /* tabbar-tab1@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "tabbar-tab1@2x.png"; sourceTree = "<group>"; };
+		FA199E9C1920C67E00A7A60B /* tabbar-tab2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "tabbar-tab2.png"; sourceTree = "<group>"; };
+		FA199E9D1920C67E00A7A60B /* tabbar-tab2@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "tabbar-tab2@2x.png"; sourceTree = "<group>"; };
+		FA199E9E1920C67E00A7A60B /* tabbar-tab3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "tabbar-tab3.png"; sourceTree = "<group>"; };
+		FA199E9F1920C67E00A7A60B /* tabbar-tab3@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "tabbar-tab3@2x.png"; sourceTree = "<group>"; };
+		FA199EA01920C67E00A7A60B /* tabbar-tab4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "tabbar-tab4.png"; sourceTree = "<group>"; };
+		FA199EA11920C67E00A7A60B /* tabbar-tab4@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "tabbar-tab4@2x.png"; sourceTree = "<group>"; };
+		FA199EA21920C67E00A7A60B /* tabbar-tab5.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "tabbar-tab5.png"; sourceTree = "<group>"; };
+		FA199EA31920C67E00A7A60B /* tabbar-tab5@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "tabbar-tab5@2x.png"; sourceTree = "<group>"; };
+		FA199EA61920C67E00A7A60B /* tabBarSelectionIndicator.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = tabBarSelectionIndicator.png; sourceTree = "<group>"; };
+		FA199EA71920C67E00A7A60B /* tabBarSelectionIndicator@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "tabBarSelectionIndicator@2x.png"; sourceTree = "<group>"; };
+		FA199EB91921F57300A7A60B /* buttonAdd.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = buttonAdd.png; sourceTree = "<group>"; };
+		FA199EBA1921F57300A7A60B /* buttonAdd@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "buttonAdd@2x.png"; sourceTree = "<group>"; };
+		FA199EBE1921F58000A7A60B /* buttonAdd@2x~ipad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "buttonAdd@2x~ipad.png"; sourceTree = "<group>"; };
+		FA199EBF1921F58000A7A60B /* buttonAdd~ipad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "buttonAdd~ipad.png"; sourceTree = "<group>"; };
+		FA199EC7192202A100A7A60B /* tabBarBackground.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = tabBarBackground.png; sourceTree = "<group>"; };
+		FA199EC8192202A100A7A60B /* tabBarBackground@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "tabBarBackground@2x.png"; sourceTree = "<group>"; };
+		FA199ECB192209BB00A7A60B /* MainStoryboard_iPad.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = MainStoryboard_iPad.storyboard; sourceTree = "<group>"; };
+		FA199ECC192209BB00A7A60B /* MainStoryboard_iPhone.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = MainStoryboard_iPhone.storyboard; sourceTree = "<group>"; };
+		FA199ECF192210EE00A7A60B /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		FA199ED1192210F900A7A60B /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		FA199ED31922350700A7A60B /* NearByViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NearByViewController.h; sourceTree = "<group>"; };
+		FA199ED41922350700A7A60B /* NearByViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NearByViewController.m; sourceTree = "<group>"; };
 		FA3D09DA1908C2DD00D697D1 /* assistant.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = assistant.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FA3D09DD1908C2DD00D697D1 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		FA3D09DF1908C2DD00D697D1 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -135,7 +269,6 @@
 		FA3D09EB1908C2DD00D697D1 /* assistant-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "assistant-Prefix.pch"; sourceTree = "<group>"; };
 		FA3D09EC1908C2DD00D697D1 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		FA3D09ED1908C2DD00D697D1 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		FA3D09F01908C2DD00D697D1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		FA3D09F21908C2DD00D697D1 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		FA3D09F31908C2DD00D697D1 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		FA3D09F51908C2DD00D697D1 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
@@ -152,6 +285,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FA199ED2192210F900A7A60B /* MapKit.framework in Frameworks */,
+				FA199ED0192210EE00A7A60B /* Security.framework in Frameworks */,
 				FA199E2F1920B83300A7A60B /* MobileCoreServices.framework in Frameworks */,
 				FA199E2D1920B81F00A7A60B /* libz.1.2.5.dylib in Frameworks */,
 				FA199E2B1920B81600A7A60B /* libobjc.dylib in Frameworks */,
@@ -192,6 +327,11 @@
 		FA15AC131908CD9700A50B68 /* Library */ = {
 			isa = PBXGroup;
 			children = (
+				FA199E921920C59F00A7A60B /* CustomTabBar */,
+				FA199E731920BD3000A7A60B /* NGTabBarController */,
+				FA199E5F1920BC4B00A7A60B /* Additions */,
+				FA199E4F1920BBDA00A7A60B /* Repository */,
+				FA199E391920BB9E00A7A60B /* RESideMenu */,
 				FA15AC261908CE3900A50B68 /* UIImage */,
 				FA15AC151908CE1300A50B68 /* JSONKit */,
 			);
@@ -286,8 +426,228 @@
 		FA15AC581908CF1B00A50B68 /* 1.0地圖首頁 */ = {
 			isa = PBXGroup;
 			children = (
+				FA199ED31922350700A7A60B /* NearByViewController.h */,
+				FA199ED41922350700A7A60B /* NearByViewController.m */,
 			);
 			name = "1.0地圖首頁";
+			sourceTree = "<group>";
+		};
+		FA199E301920BAED00A7A60B /* Theme */ = {
+			isa = PBXGroup;
+			children = (
+				FA199E551920BC1200A7A60B /* ADVCustomTheme */,
+				FA199E541920BC0800A7A60B /* ADVDefaultTheme */,
+				FA199E531920BC0000A7A60B /* ADVTheme */,
+				FA199E351920BB7C00A7A60B /* MenuView */,
+				FA199E311920BB0F00A7A60B /* Tabbar */,
+			);
+			name = Theme;
+			sourceTree = "<group>";
+		};
+		FA199E311920BB0F00A7A60B /* Tabbar */ = {
+			isa = PBXGroup;
+			children = (
+				FA199E321920BB2400A7A60B /* NGTestTabBarController.h */,
+				FA199E331920BB2400A7A60B /* NGTestTabBarController.m */,
+			);
+			name = Tabbar;
+			sourceTree = "<group>";
+		};
+		FA199E351920BB7C00A7A60B /* MenuView */ = {
+			isa = PBXGroup;
+			children = (
+				FA199E361920BB8700A7A60B /* MenuViewController.h */,
+				FA199E371920BB8700A7A60B /* MenuViewController.m */,
+			);
+			name = MenuView;
+			sourceTree = "<group>";
+		};
+		FA199E391920BB9E00A7A60B /* RESideMenu */ = {
+			isa = PBXGroup;
+			children = (
+				FA199E3A1920BBB400A7A60B /* AccelerationAnimation.h */,
+				FA199E3B1920BBB400A7A60B /* AccelerationAnimation.m */,
+				FA199E3C1920BBB400A7A60B /* Evaluate.h */,
+				FA199E3D1920BBB400A7A60B /* Evaluate.m */,
+				FA199E3E1920BBB400A7A60B /* REBackgroundView.h */,
+				FA199E3F1920BBB400A7A60B /* REBackgroundView.m */,
+				FA199E401920BBB400A7A60B /* RESideMenu.h */,
+				FA199E411920BBB400A7A60B /* RESideMenu.m */,
+				FA199E421920BBB400A7A60B /* RESideMenuCell.h */,
+				FA199E431920BBB400A7A60B /* RESideMenuCell.m */,
+				FA199E441920BBB400A7A60B /* RESideMenuItem.h */,
+				FA199E451920BBB400A7A60B /* RESideMenuItem.m */,
+				FA199E461920BBB400A7A60B /* UIWindow+RESideMenuExtensions.h */,
+				FA199E471920BBB400A7A60B /* UIWindow+RESideMenuExtensions.m */,
+			);
+			name = RESideMenu;
+			sourceTree = "<group>";
+		};
+		FA199E4F1920BBDA00A7A60B /* Repository */ = {
+			isa = PBXGroup;
+			children = (
+				FA199E501920BBE800A7A60B /* DataSource.h */,
+				FA199E511920BBE800A7A60B /* DataSource.m */,
+			);
+			name = Repository;
+			sourceTree = "<group>";
+		};
+		FA199E531920BC0000A7A60B /* ADVTheme */ = {
+			isa = PBXGroup;
+			children = (
+				FA199E561920BC2200A7A60B /* ADVTheme.h */,
+				FA199E571920BC2200A7A60B /* ADVTheme.m */,
+			);
+			name = ADVTheme;
+			sourceTree = "<group>";
+		};
+		FA199E541920BC0800A7A60B /* ADVDefaultTheme */ = {
+			isa = PBXGroup;
+			children = (
+				FA199E591920BC2900A7A60B /* ADVDefaultTheme.h */,
+				FA199E5A1920BC2900A7A60B /* ADVDefaultTheme.m */,
+			);
+			name = ADVDefaultTheme;
+			sourceTree = "<group>";
+		};
+		FA199E551920BC1200A7A60B /* ADVCustomTheme */ = {
+			isa = PBXGroup;
+			children = (
+				FA199E5C1920BC3000A7A60B /* ADVCustomTheme.h */,
+				FA199E5D1920BC3000A7A60B /* ADVCustomTheme.m */,
+			);
+			name = ADVCustomTheme;
+			sourceTree = "<group>";
+		};
+		FA199E5F1920BC4B00A7A60B /* Additions */ = {
+			isa = PBXGroup;
+			children = (
+				FA199E6E1920BC9900A7A60B /* UIColor+Alpha */,
+				FA199E671920BC8100A7A60B /* UIImage+iPhone5 */,
+				FA199E601920BC5700A7A60B /* UISearchBar */,
+			);
+			name = Additions;
+			sourceTree = "<group>";
+		};
+		FA199E601920BC5700A7A60B /* UISearchBar */ = {
+			isa = PBXGroup;
+			children = (
+				FA199E611920BC6C00A7A60B /* UISearchBar+TextColor.h */,
+				FA199E621920BC6C00A7A60B /* UISearchBar+TextColor.m */,
+				FA199E631920BC6C00A7A60B /* UIVisibleScopeSearchBar.h */,
+				FA199E641920BC6C00A7A60B /* UIVisibleScopeSearchBar.m */,
+			);
+			name = UISearchBar;
+			sourceTree = "<group>";
+		};
+		FA199E671920BC8100A7A60B /* UIImage+iPhone5 */ = {
+			isa = PBXGroup;
+			children = (
+				FA199E681920BC9400A7A60B /* UIImage+iPhone5.h */,
+				FA199E691920BC9400A7A60B /* UIImage+iPhone5.m */,
+				FA199E6A1920BC9400A7A60B /* UIImage+StackBlur.h */,
+				FA199E6B1920BC9400A7A60B /* UIImage+StackBlur.m */,
+			);
+			name = "UIImage+iPhone5";
+			sourceTree = "<group>";
+		};
+		FA199E6E1920BC9900A7A60B /* UIColor+Alpha */ = {
+			isa = PBXGroup;
+			children = (
+				FA199E6F1920BCA900A7A60B /* UIColor+Alpha.h */,
+				FA199E701920BCA900A7A60B /* UIColor+Alpha.m */,
+			);
+			name = "UIColor+Alpha";
+			sourceTree = "<group>";
+		};
+		FA199E731920BD3000A7A60B /* NGTabBarController */ = {
+			isa = PBXGroup;
+			children = (
+				FA199E741920BD3000A7A60B /* LICENSE */,
+				FA199E751920BD3000A7A60B /* NGTabBarController */,
+				FA199E841920BD3000A7A60B /* NGTabBarController.xcodeproj */,
+				FA199E871920BD3000A7A60B /* README.mdown */,
+			);
+			path = NGTabBarController;
+			sourceTree = "<group>";
+		};
+		FA199E751920BD3000A7A60B /* NGTabBarController */ = {
+			isa = PBXGroup;
+			children = (
+				FA199E761920BD3000A7A60B /* NGTabBar.h */,
+				FA199E771920BD3000A7A60B /* NGTabBar.m */,
+				FA199E781920BD3000A7A60B /* NGTabBarController.h */,
+				FA199E791920BD3000A7A60B /* NGTabBarController.m */,
+				FA199E7A1920BD3000A7A60B /* NGTabBarControllerAnimation.h */,
+				FA199E7B1920BD3000A7A60B /* NGTabBarControllerDelegate.h */,
+				FA199E7C1920BD3000A7A60B /* NGTabBarItem.h */,
+				FA199E7D1920BD3000A7A60B /* NGTabBarItem.m */,
+				FA199E7E1920BD3000A7A60B /* NGTabBarPosition.h */,
+				FA199E7F1920BD3000A7A60B /* Prefix.pch */,
+				FA199E801920BD3000A7A60B /* UINavigationController+NGTabBarNavigationDelegate.h */,
+				FA199E811920BD3000A7A60B /* UINavigationController+NGTabBarNavigationDelegate.m */,
+				FA199E821920BD3000A7A60B /* UIViewController+NGTabBarItem.h */,
+				FA199E831920BD3000A7A60B /* UIViewController+NGTabBarItem.m */,
+			);
+			path = NGTabBarController;
+			sourceTree = "<group>";
+		};
+		FA199E851920BD3000A7A60B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				FA199E911920BD3000A7A60B /* libNGTabBarController.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		FA199E921920C59F00A7A60B /* CustomTabBar */ = {
+			isa = PBXGroup;
+			children = (
+				FA199E931920C5AF00A7A60B /* CustomTabBarViewController.h */,
+				FA199E941920C5AF00A7A60B /* CustomTabBarViewController.m */,
+			);
+			name = CustomTabBar;
+			sourceTree = "<group>";
+		};
+		FA199E971920C66900A7A60B /* images */ = {
+			isa = PBXGroup;
+			children = (
+				FA199EBD1921F57600A7A60B /* iPad */,
+				FA199E991920C67100A7A60B /* iphone */,
+			);
+			name = images;
+			sourceTree = "<group>";
+		};
+		FA199E991920C67100A7A60B /* iphone */ = {
+			isa = PBXGroup;
+			children = (
+				FA199EB91921F57300A7A60B /* buttonAdd.png */,
+				FA199EBA1921F57300A7A60B /* buttonAdd@2x.png */,
+				FA199E9A1920C67E00A7A60B /* tabbar-tab1.png */,
+				FA199E9B1920C67E00A7A60B /* tabbar-tab1@2x.png */,
+				FA199E9C1920C67E00A7A60B /* tabbar-tab2.png */,
+				FA199E9D1920C67E00A7A60B /* tabbar-tab2@2x.png */,
+				FA199E9E1920C67E00A7A60B /* tabbar-tab3.png */,
+				FA199E9F1920C67E00A7A60B /* tabbar-tab3@2x.png */,
+				FA199EA01920C67E00A7A60B /* tabbar-tab4.png */,
+				FA199EA11920C67E00A7A60B /* tabbar-tab4@2x.png */,
+				FA199EA21920C67E00A7A60B /* tabbar-tab5.png */,
+				FA199EA31920C67E00A7A60B /* tabbar-tab5@2x.png */,
+				FA199EC7192202A100A7A60B /* tabBarBackground.png */,
+				FA199EC8192202A100A7A60B /* tabBarBackground@2x.png */,
+				FA199EA61920C67E00A7A60B /* tabBarSelectionIndicator.png */,
+				FA199EA71920C67E00A7A60B /* tabBarSelectionIndicator@2x.png */,
+			);
+			name = iphone;
+			sourceTree = "<group>";
+		};
+		FA199EBD1921F57600A7A60B /* iPad */ = {
+			isa = PBXGroup;
+			children = (
+				FA199EBE1921F58000A7A60B /* buttonAdd@2x~ipad.png */,
+				FA199EBF1921F58000A7A60B /* buttonAdd~ipad.png */,
+			);
+			name = iPad;
 			sourceTree = "<group>";
 		};
 		FA3D09D11908C2DD00D697D1 = {
@@ -313,6 +673,8 @@
 		FA3D09DC1908C2DD00D697D1 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				FA199ED1192210F900A7A60B /* MapKit.framework */,
+				FA199ECF192210EE00A7A60B /* Security.framework */,
 				FA199E2E1920B83300A7A60B /* MobileCoreServices.framework */,
 				FA199E2C1920B81F00A7A60B /* libz.1.2.5.dylib */,
 				FA199E2A1920B81600A7A60B /* libobjc.dylib */,
@@ -340,6 +702,7 @@
 		FA3D09E31908C2DD00D697D1 /* assistant */ = {
 			isa = PBXGroup;
 			children = (
+				FA199E301920BAED00A7A60B /* Theme */,
 				FA15AC131908CD9700A50B68 /* Library */,
 				FA15AC271908CE5000A50B68 /* Utils */,
 				FA15AC381908CE6300A50B68 /* GoogleMap SDK */,
@@ -350,7 +713,8 @@
 				FA15AC581908CF1B00A50B68 /* 1.0地圖首頁 */,
 				FA3D09EC1908C2DD00D697D1 /* AppDelegate.h */,
 				FA3D09ED1908C2DD00D697D1 /* AppDelegate.m */,
-				FA3D09EF1908C2DD00D697D1 /* Main.storyboard */,
+				FA199ECB192209BB00A7A60B /* MainStoryboard_iPad.storyboard */,
+				FA199ECC192209BB00A7A60B /* MainStoryboard_iPhone.storyboard */,
 				FA3D09F21908C2DD00D697D1 /* ViewController.h */,
 				FA3D09F31908C2DD00D697D1 /* ViewController.m */,
 				FA3D09F51908C2DD00D697D1 /* Images.xcassets */,
@@ -362,6 +726,7 @@
 		FA3D09E41908C2DD00D697D1 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				FA199E971920C66900A7A60B /* images */,
 				FA3D09E51908C2DD00D697D1 /* assistant-Info.plist */,
 				FA3D09E61908C2DD00D697D1 /* InfoPlist.strings */,
 				FA3D09E91908C2DD00D697D1 /* main.m */,
@@ -453,6 +818,12 @@
 			mainGroup = FA3D09D11908C2DD00D697D1;
 			productRefGroup = FA3D09DB1908C2DD00D697D1 /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = FA199E851920BD3000A7A60B /* Products */;
+					ProjectRef = FA199E841920BD3000A7A60B /* NGTabBarController.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				FA3D09D91908C2DD00D697D1 /* assistant */,
@@ -461,15 +832,46 @@
 		};
 /* End PBXProject section */
 
+/* Begin PBXReferenceProxy section */
+		FA199E911920BD3000A7A60B /* libNGTabBarController.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libNGTabBarController.a;
+			remoteRef = FA199E901920BD3000A7A60B /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
+
 /* Begin PBXResourcesBuildPhase section */
 		FA3D09D81908C2DD00D697D1 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FA199EA91920C67E00A7A60B /* tabbar-tab1@2x.png in Resources */,
+				FA199EB01920C67E00A7A60B /* tabbar-tab5.png in Resources */,
+				FA199EBC1921F57300A7A60B /* buttonAdd@2x.png in Resources */,
+				FA199EAA1920C67E00A7A60B /* tabbar-tab2.png in Resources */,
+				FA199ECD192209BB00A7A60B /* MainStoryboard_iPad.storyboard in Resources */,
 				FA3D09F61908C2DD00D697D1 /* Images.xcassets in Resources */,
+				FA199EC11921F58000A7A60B /* buttonAdd~ipad.png in Resources */,
+				FA199EB11920C67E00A7A60B /* tabbar-tab5@2x.png in Resources */,
+				FA199ECE192209BB00A7A60B /* MainStoryboard_iPhone.storyboard in Resources */,
+				FA199EAF1920C67E00A7A60B /* tabbar-tab4@2x.png in Resources */,
+				FA199EB51920C67E00A7A60B /* tabBarSelectionIndicator@2x.png in Resources */,
 				FA3D09E81908C2DD00D697D1 /* InfoPlist.strings in Resources */,
-				FA3D09F11908C2DD00D697D1 /* Main.storyboard in Resources */,
+				FA199EC9192202A100A7A60B /* tabBarBackground.png in Resources */,
+				FA199EB41920C67E00A7A60B /* tabBarSelectionIndicator.png in Resources */,
+				FA199E8E1920BD3000A7A60B /* README.mdown in Resources */,
+				FA199EAD1920C67E00A7A60B /* tabbar-tab3@2x.png in Resources */,
+				FA199EC01921F58000A7A60B /* buttonAdd@2x~ipad.png in Resources */,
+				FA199ECA192202A100A7A60B /* tabBarBackground@2x.png in Resources */,
+				FA199EBB1921F57300A7A60B /* buttonAdd.png in Resources */,
 				FA15AC3E1908CE7400A50B68 /* GoogleMaps.bundle in Resources */,
+				FA199EAC1920C67E00A7A60B /* tabbar-tab3.png in Resources */,
+				FA199EA81920C67E00A7A60B /* tabbar-tab1.png in Resources */,
+				FA199E881920BD3000A7A60B /* LICENSE in Resources */,
+				FA199EAE1920C67E00A7A60B /* tabbar-tab4.png in Resources */,
+				FA199EAB1920C67E00A7A60B /* tabbar-tab2@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -522,16 +924,41 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FA199E8A1920BD3000A7A60B /* NGTabBarController.m in Sources */,
 				FA15AC341908CE5F00A50B68 /* CMUtility.m in Sources */,
+				FA199E381920BB8700A7A60B /* MenuViewController.m in Sources */,
 				FA15AC521908CF0C00A50B68 /* SetProfileViewController.m in Sources */,
+				FA199E5B1920BC2900A7A60B /* ADVDefaultTheme.m in Sources */,
+				FA199E951920C5AF00A7A60B /* CustomTabBarViewController.m in Sources */,
 				FA15AC361908CE5F00A50B68 /* Utils.m in Sources */,
+				FA199E8B1920BD3000A7A60B /* NGTabBarItem.m in Sources */,
+				FA199E491920BBB400A7A60B /* Evaluate.m in Sources */,
 				FA15AC301908CE5F00A50B68 /* CMCache.m in Sources */,
 				FA3D09F41908C2DD00D697D1 /* ViewController.m in Sources */,
+				FA199E4C1920BBB400A7A60B /* RESideMenuCell.m in Sources */,
+				FA199E6D1920BC9400A7A60B /* UIImage+StackBlur.m in Sources */,
 				FA3D09EE1908C2DD00D697D1 /* AppDelegate.m in Sources */,
 				FA199E111920B0AB00A7A60B /* AyiLoginViewController.m in Sources */,
 				FA15AC241908CE3700A50B68 /* UIImage+RoundedCornerAdditions.m in Sources */,
+				FA199E4D1920BBB400A7A60B /* RESideMenuItem.m in Sources */,
+				FA199E341920BB2400A7A60B /* NGTestTabBarController.m in Sources */,
+				FA199E581920BC2200A7A60B /* ADVTheme.m in Sources */,
+				FA199E891920BD3000A7A60B /* NGTabBar.m in Sources */,
 				FA15AC181908CE2600A50B68 /* JSONKit.m in Sources */,
+				FA199E6C1920BC9400A7A60B /* UIImage+iPhone5.m in Sources */,
+				FA199E8D1920BD3000A7A60B /* UIViewController+NGTabBarItem.m in Sources */,
 				FA15AC221908CE3700A50B68 /* UIImage+ResizeAdditions.m in Sources */,
+				FA199E5E1920BC3000A7A60B /* ADVCustomTheme.m in Sources */,
+				FA199E711920BCA900A7A60B /* UIColor+Alpha.m in Sources */,
+				FA199E481920BBB400A7A60B /* AccelerationAnimation.m in Sources */,
+				FA199E521920BBE800A7A60B /* DataSource.m in Sources */,
+				FA199E651920BC6C00A7A60B /* UISearchBar+TextColor.m in Sources */,
+				FA199E661920BC6C00A7A60B /* UIVisibleScopeSearchBar.m in Sources */,
+				FA199E4B1920BBB400A7A60B /* RESideMenu.m in Sources */,
+				FA199E8C1920BD3000A7A60B /* UINavigationController+NGTabBarNavigationDelegate.m in Sources */,
+				FA199ED51922350700A7A60B /* NearByViewController.m in Sources */,
+				FA199E4A1920BBB400A7A60B /* REBackgroundView.m in Sources */,
+				FA199E4E1920BBB400A7A60B /* UIWindow+RESideMenuExtensions.m in Sources */,
 				FA15AC451908CE9000A50B68 /* AyiWellcomeViewController.m in Sources */,
 				FA15AC4C1908CEC700A50B68 /* AyiSignUpViewController.m in Sources */,
 				FA3D09EA1908C2DD00D697D1 /* main.m in Sources */,
@@ -579,14 +1006,6 @@
 				FA3D09E71908C2DD00D697D1 /* en */,
 			);
 			name = InfoPlist.strings;
-			sourceTree = "<group>";
-		};
-		FA3D09EF1908C2DD00D697D1 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				FA3D09F01908C2DD00D697D1 /* Base */,
-			);
-			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
 		FA3D0A051908C2DD00D697D1 /* InfoPlist.strings */ = {
