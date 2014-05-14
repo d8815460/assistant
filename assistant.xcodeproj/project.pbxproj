@@ -102,6 +102,11 @@
 		FA199ED0192210EE00A7A60B /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FA199ECF192210EE00A7A60B /* Security.framework */; };
 		FA199ED2192210F900A7A60B /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FA199ED1192210F900A7A60B /* MapKit.framework */; };
 		FA199ED51922350700A7A60B /* NearByViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FA199ED41922350700A7A60B /* NearByViewController.m */; };
+		FA199EDB19223B4F00A7A60B /* PAWSearchRadius.m in Sources */ = {isa = PBXBuildFile; fileRef = FA199ED819223B4F00A7A60B /* PAWSearchRadius.m */; };
+		FA199EDC19223B4F00A7A60B /* PAWPost.m in Sources */ = {isa = PBXBuildFile; fileRef = FA199EDA19223B4F00A7A60B /* PAWPost.m */; };
+		FA199EDF19223C2F00A7A60B /* PAWWallPostsTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FA199EDE19223C2F00A7A60B /* PAWWallPostsTableViewController.m */; };
+		FA199EE519223C7C00A7A60B /* PAWActivityView.m in Sources */ = {isa = PBXBuildFile; fileRef = FA199EE219223C7C00A7A60B /* PAWActivityView.m */; };
+		FA199EE619223C7C00A7A60B /* PAWCircleView.m in Sources */ = {isa = PBXBuildFile; fileRef = FA199EE419223C7C00A7A60B /* PAWCircleView.m */; };
 		FA3D09DE1908C2DD00D697D1 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FA3D09DD1908C2DD00D697D1 /* Foundation.framework */; };
 		FA3D09E01908C2DD00D697D1 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FA3D09DF1908C2DD00D697D1 /* CoreGraphics.framework */; };
 		FA3D09E21908C2DD00D697D1 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FA3D09E11908C2DD00D697D1 /* UIKit.framework */; };
@@ -259,6 +264,16 @@
 		FA199ED1192210F900A7A60B /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		FA199ED31922350700A7A60B /* NearByViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NearByViewController.h; sourceTree = "<group>"; };
 		FA199ED41922350700A7A60B /* NearByViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NearByViewController.m; sourceTree = "<group>"; };
+		FA199ED719223B4F00A7A60B /* PAWSearchRadius.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PAWSearchRadius.h; sourceTree = "<group>"; };
+		FA199ED819223B4F00A7A60B /* PAWSearchRadius.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PAWSearchRadius.m; sourceTree = "<group>"; };
+		FA199ED919223B4F00A7A60B /* PAWPost.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PAWPost.h; sourceTree = "<group>"; };
+		FA199EDA19223B4F00A7A60B /* PAWPost.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PAWPost.m; sourceTree = "<group>"; };
+		FA199EDD19223C2F00A7A60B /* PAWWallPostsTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PAWWallPostsTableViewController.h; sourceTree = "<group>"; };
+		FA199EDE19223C2F00A7A60B /* PAWWallPostsTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PAWWallPostsTableViewController.m; sourceTree = "<group>"; };
+		FA199EE119223C7C00A7A60B /* PAWActivityView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PAWActivityView.h; sourceTree = "<group>"; };
+		FA199EE219223C7C00A7A60B /* PAWActivityView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PAWActivityView.m; sourceTree = "<group>"; };
+		FA199EE319223C7C00A7A60B /* PAWCircleView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PAWCircleView.h; sourceTree = "<group>"; };
+		FA199EE419223C7C00A7A60B /* PAWCircleView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PAWCircleView.m; sourceTree = "<group>"; };
 		FA3D09DA1908C2DD00D697D1 /* assistant.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = assistant.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FA3D09DD1908C2DD00D697D1 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		FA3D09DF1908C2DD00D697D1 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -426,6 +441,9 @@
 		FA15AC581908CF1B00A50B68 /* 1.0地圖首頁 */ = {
 			isa = PBXGroup;
 			children = (
+				FA199ED619223B4100A7A60B /* Models */,
+				FA199EDD19223C2F00A7A60B /* PAWWallPostsTableViewController.h */,
+				FA199EDE19223C2F00A7A60B /* PAWWallPostsTableViewController.m */,
 				FA199ED31922350700A7A60B /* NearByViewController.h */,
 				FA199ED41922350700A7A60B /* NearByViewController.m */,
 			);
@@ -648,6 +666,29 @@
 				FA199EBF1921F58000A7A60B /* buttonAdd~ipad.png */,
 			);
 			name = iPad;
+			sourceTree = "<group>";
+		};
+		FA199ED619223B4100A7A60B /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				FA199EE019223C7100A7A60B /* Views */,
+				FA199ED719223B4F00A7A60B /* PAWSearchRadius.h */,
+				FA199ED819223B4F00A7A60B /* PAWSearchRadius.m */,
+				FA199ED919223B4F00A7A60B /* PAWPost.h */,
+				FA199EDA19223B4F00A7A60B /* PAWPost.m */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+		FA199EE019223C7100A7A60B /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				FA199EE119223C7C00A7A60B /* PAWActivityView.h */,
+				FA199EE219223C7C00A7A60B /* PAWActivityView.m */,
+				FA199EE319223C7C00A7A60B /* PAWCircleView.h */,
+				FA199EE419223C7C00A7A60B /* PAWCircleView.m */,
+			);
+			name = Views;
 			sourceTree = "<group>";
 		};
 		FA3D09D11908C2DD00D697D1 = {
@@ -928,6 +969,7 @@
 				FA15AC341908CE5F00A50B68 /* CMUtility.m in Sources */,
 				FA199E381920BB8700A7A60B /* MenuViewController.m in Sources */,
 				FA15AC521908CF0C00A50B68 /* SetProfileViewController.m in Sources */,
+				FA199EDB19223B4F00A7A60B /* PAWSearchRadius.m in Sources */,
 				FA199E5B1920BC2900A7A60B /* ADVDefaultTheme.m in Sources */,
 				FA199E951920C5AF00A7A60B /* CustomTabBarViewController.m in Sources */,
 				FA15AC361908CE5F00A50B68 /* Utils.m in Sources */,
@@ -935,8 +977,10 @@
 				FA199E491920BBB400A7A60B /* Evaluate.m in Sources */,
 				FA15AC301908CE5F00A50B68 /* CMCache.m in Sources */,
 				FA3D09F41908C2DD00D697D1 /* ViewController.m in Sources */,
+				FA199EDC19223B4F00A7A60B /* PAWPost.m in Sources */,
 				FA199E4C1920BBB400A7A60B /* RESideMenuCell.m in Sources */,
 				FA199E6D1920BC9400A7A60B /* UIImage+StackBlur.m in Sources */,
+				FA199EE519223C7C00A7A60B /* PAWActivityView.m in Sources */,
 				FA3D09EE1908C2DD00D697D1 /* AppDelegate.m in Sources */,
 				FA199E111920B0AB00A7A60B /* AyiLoginViewController.m in Sources */,
 				FA15AC241908CE3700A50B68 /* UIImage+RoundedCornerAdditions.m in Sources */,
@@ -954,10 +998,12 @@
 				FA199E521920BBE800A7A60B /* DataSource.m in Sources */,
 				FA199E651920BC6C00A7A60B /* UISearchBar+TextColor.m in Sources */,
 				FA199E661920BC6C00A7A60B /* UIVisibleScopeSearchBar.m in Sources */,
+				FA199EE619223C7C00A7A60B /* PAWCircleView.m in Sources */,
 				FA199E4B1920BBB400A7A60B /* RESideMenu.m in Sources */,
 				FA199E8C1920BD3000A7A60B /* UINavigationController+NGTabBarNavigationDelegate.m in Sources */,
 				FA199ED51922350700A7A60B /* NearByViewController.m in Sources */,
 				FA199E4A1920BBB400A7A60B /* REBackgroundView.m in Sources */,
+				FA199EDF19223C2F00A7A60B /* PAWWallPostsTableViewController.m in Sources */,
 				FA199E4E1920BBB400A7A60B /* UIWindow+RESideMenuExtensions.m in Sources */,
 				FA15AC451908CE9000A50B68 /* AyiWellcomeViewController.m in Sources */,
 				FA15AC4C1908CEC700A50B68 /* AyiSignUpViewController.m in Sources */,

@@ -7,7 +7,18 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <MapKit/MapKit.h>
+#import "PAWPost.h"
 
-@interface NearByViewController : UIViewController
+@interface NearByViewController : UIViewController <MKMapViewDelegate, CLLocationManagerDelegate>
+
+@property (nonatomic, strong) IBOutlet MKMapView *mapView;
+
+@end
+
+@protocol PAWWallViewControllerHighlight <NSObject>
+
+- (void)highlightCellForPost:(PAWPost *)post;
+- (void)unhighlightCellForPost:(PAWPost *)post;
 
 @end

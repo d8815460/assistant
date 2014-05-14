@@ -9,6 +9,8 @@
 #import <UIKit/UIKit.h>
 #import "NGTabBarController.h"
 #import "MenuViewController.h"
+#import <CoreLocation/CoreLocation.h>
+#import <Reachability.h>                    //判斷網路是否可用
 
 @class NGTestTabBarController;
 @class PaperFoldNavigationController;
@@ -29,6 +31,14 @@ typedef enum {
 @property (strong, nonatomic) UIViewController *mainVC;
 @property (assign, nonatomic) ADVNavigationType navigationType;
 
+@property (nonatomic, assign) CLLocationAccuracy filterDistance;
+@property (nonatomic, strong) CLLocation *currentLocation;
+
+@property (nonatomic, strong) Reachability *hostReach;                                  //判斷網路是否可用
+@property (nonatomic, strong) Reachability *internetReach;                              //判斷網路是否可用
+@property (nonatomic, strong) Reachability *wifiReach;                                  //判斷wifi網路是否可用
+@property (nonatomic, readonly) int networkStatus;
+
 + (NSInteger)OSVersion;
 + (AppDelegate *)sharedDelegate;
 + (UIImage*)createWhiteGradientImageWithSize:(CGSize)size;
@@ -38,8 +48,14 @@ typedef enum {
 + (void)tabBarController:(NGTabBarController *)tabBarC setupItemsForOrientation:(UIInterfaceOrientation)interfaceOrientation;
 - (void)resetAfterTypeChange:(BOOL)cancel;
 
+- (BOOL)isParseReachable;
+- (void)presentWelcomeViewController;
+- (void)presentWelcomeViewControllerAnimated:(BOOL)animated;
+- (void)presentFirstSignInViewController;
 
 - (void)presentGoogleMapController;
 - (void)logOut;
+
+- (BOOL)handleActionURL:(NSURL *)url;                                                   //偵測動作URL_照相機跟相簿偵測
 
 @end
