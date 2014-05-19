@@ -30,7 +30,8 @@
     
     if ([self.logInView.usernameField respondsToSelector:@selector(setAttributedPlaceholder:)]) {
         UIColor *color = [UIColor colorWithRed:169.0f/255.0f green:169.0f/255.0f blue:169.0f/255.0f alpha:1.0];
-        self.logInView.usernameField.attributedPlaceholder = [[NSAttributedString alloc] initWithString:@"Account" attributes:@{NSForegroundColorAttributeName: color}];
+        self.logInView.usernameField.attributedPlaceholder = [[NSAttributedString alloc] initWithString:@"Phone Number" attributes:@{NSForegroundColorAttributeName: color}];
+        self.logInView.usernameField.keyboardType = UIKeyboardTypeNumberPad;
     }else {
         NSLog(@"Cannot set placeholder text's color, because deployment target is earlier than iOS 6.0");
         // TODO: Add fall-back code to set placeholder color.

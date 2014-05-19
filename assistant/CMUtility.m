@@ -39,9 +39,9 @@
     
     BOOL cachedToDisk = [[NSFileManager defaultManager] createFileAtPath:[profilePictureCacheURL path] contents:newProfilePictureData attributes:nil];
     NSLog(@"磁碟高速緩存個人檔案照片: %d", cachedToDisk);
-    UIStoryboard *mainStoryboard = [UIStoryboard storyboardWithName:@"MainStoryboard_iPhone" bundle: nil];
-    SetProfileViewController *setProfile = (SetProfileViewController *)[mainStoryboard instantiateViewControllerWithIdentifier:@"setProfile"];
-    [setProfile viewDidAppear:YES];
+//    UIStoryboard *mainStoryboard = [UIStoryboard storyboardWithName:@"MainStoryboard_iPhone" bundle: nil];
+//    SetProfileViewController *setProfile = (SetProfileViewController *)[mainStoryboard instantiateViewControllerWithIdentifier:@"setProfile"];
+//    [setProfile viewDidAppear:YES];
     
     UIImage *image = [UIImage imageWithData:newProfilePictureData];
     UIImage *mediumImage = [image thumbnailImage:280 transparentBorder:0 cornerRadius:140 interpolationQuality:kCGInterpolationHigh];

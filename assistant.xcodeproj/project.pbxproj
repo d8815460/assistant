@@ -120,6 +120,9 @@
 		FA3D09FF1908C2DD00D697D1 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FA3D09E11908C2DD00D697D1 /* UIKit.framework */; };
 		FA3D0A071908C2DD00D697D1 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = FA3D0A051908C2DD00D697D1 /* InfoPlist.strings */; };
 		FA3D0A091908C2DD00D697D1 /* assistantTests.m in Sources */ = {isa = PBXBuildFile; fileRef = FA3D0A081908C2DD00D697D1 /* assistantTests.m */; };
+		FA41488D1929B97C00D69860 /* TasksViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FA41488C1929B97C00D69860 /* TasksViewController.m */; };
+		FA4148901929DA6600D69860 /* CheckPhoneCodeValueViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FA41488F1929DA6600D69860 /* CheckPhoneCodeValueViewController.m */; };
+		FA4148941929E74D00D69860 /* AddPhoneNumberViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FA4148931929E74D00D69860 /* AddPhoneNumberViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -292,6 +295,12 @@
 		FA3D0A041908C2DD00D697D1 /* assistantTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "assistantTests-Info.plist"; sourceTree = "<group>"; };
 		FA3D0A061908C2DD00D697D1 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		FA3D0A081908C2DD00D697D1 /* assistantTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = assistantTests.m; sourceTree = "<group>"; };
+		FA41488B1929B97C00D69860 /* TasksViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TasksViewController.h; sourceTree = "<group>"; };
+		FA41488C1929B97C00D69860 /* TasksViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TasksViewController.m; sourceTree = "<group>"; };
+		FA41488E1929DA6600D69860 /* CheckPhoneCodeValueViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CheckPhoneCodeValueViewController.h; sourceTree = "<group>"; };
+		FA41488F1929DA6600D69860 /* CheckPhoneCodeValueViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CheckPhoneCodeValueViewController.m; sourceTree = "<group>"; };
+		FA4148921929E74D00D69860 /* AddPhoneNumberViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AddPhoneNumberViewController.h; sourceTree = "<group>"; };
+		FA4148931929E74D00D69860 /* AddPhoneNumberViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AddPhoneNumberViewController.m; sourceTree = "<group>"; };
 		FB35339732F741F48E0E305D /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -432,8 +441,12 @@
 		FA15AC4F1908CEEE00A50B68 /* 0.2建立基本資料 */ = {
 			isa = PBXGroup;
 			children = (
+				FA4148921929E74D00D69860 /* AddPhoneNumberViewController.h */,
+				FA4148931929E74D00D69860 /* AddPhoneNumberViewController.m */,
 				FA15AC501908CF0C00A50B68 /* SetProfileViewController.h */,
 				FA15AC511908CF0C00A50B68 /* SetProfileViewController.m */,
+				FA41488E1929DA6600D69860 /* CheckPhoneCodeValueViewController.h */,
+				FA41488F1929DA6600D69860 /* CheckPhoneCodeValueViewController.m */,
 			);
 			name = "0.2建立基本資料";
 			sourceTree = "<group>";
@@ -752,6 +765,7 @@
 				FA15AC4F1908CEEE00A50B68 /* 0.2建立基本資料 */,
 				FA15AC4E1908CED700A50B68 /* 0.3連接付款 */,
 				FA15AC581908CF1B00A50B68 /* 1.0地圖首頁 */,
+				FA41488A1929B93D00D69860 /* 5.0任務 */,
 				FA3D09EC1908C2DD00D697D1 /* AppDelegate.h */,
 				FA3D09ED1908C2DD00D697D1 /* AppDelegate.m */,
 				FA199ECB192209BB00A7A60B /* MainStoryboard_iPad.storyboard */,
@@ -792,6 +806,15 @@
 				FA3D0A051908C2DD00D697D1 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		FA41488A1929B93D00D69860 /* 5.0任務 */ = {
+			isa = PBXGroup;
+			children = (
+				FA41488B1929B97C00D69860 /* TasksViewController.h */,
+				FA41488C1929B97C00D69860 /* TasksViewController.m */,
+			);
+			name = "5.0任務";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -965,11 +988,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FA4148941929E74D00D69860 /* AddPhoneNumberViewController.m in Sources */,
 				FA199E8A1920BD3000A7A60B /* NGTabBarController.m in Sources */,
 				FA15AC341908CE5F00A50B68 /* CMUtility.m in Sources */,
 				FA199E381920BB8700A7A60B /* MenuViewController.m in Sources */,
 				FA15AC521908CF0C00A50B68 /* SetProfileViewController.m in Sources */,
 				FA199EDB19223B4F00A7A60B /* PAWSearchRadius.m in Sources */,
+				FA4148901929DA6600D69860 /* CheckPhoneCodeValueViewController.m in Sources */,
 				FA199E5B1920BC2900A7A60B /* ADVDefaultTheme.m in Sources */,
 				FA199E951920C5AF00A7A60B /* CustomTabBarViewController.m in Sources */,
 				FA15AC361908CE5F00A50B68 /* Utils.m in Sources */,
@@ -1000,6 +1025,7 @@
 				FA199E661920BC6C00A7A60B /* UIVisibleScopeSearchBar.m in Sources */,
 				FA199EE619223C7C00A7A60B /* PAWCircleView.m in Sources */,
 				FA199E4B1920BBB400A7A60B /* RESideMenu.m in Sources */,
+				FA41488D1929B97C00D69860 /* TasksViewController.m in Sources */,
 				FA199E8C1920BD3000A7A60B /* UINavigationController+NGTabBarNavigationDelegate.m in Sources */,
 				FA199ED51922350700A7A60B /* NearByViewController.m in Sources */,
 				FA199E4A1920BBB400A7A60B /* REBackgroundView.m in Sources */,

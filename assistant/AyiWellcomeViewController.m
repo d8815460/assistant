@@ -59,11 +59,15 @@
 */
 
 - (IBAction)loginButtonPressed:(id)sender {
-    [self performSegueWithIdentifier:@"login" sender:sender];
+    [self dismissViewControllerAnimated:YES completion:^{
+        [self performSegueWithIdentifier:@"login" sender:sender];
+    }];
 }
 
 - (IBAction)signupButtonPressed:(id)sender {
-    [self performSegueWithIdentifier:@"signup" sender:sender];
+    [self dismissViewControllerAnimated:YES completion:^{
+        [self performSegueWithIdentifier:@"signup" sender:sender];
+    }];
 }
 
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
@@ -74,13 +78,13 @@
         _loginViewController = viewControllers[0];
         _loginViewController.delegate = self;
         _loginViewController.facebookPermissions = @[@"friends_about_me"];
-        _loginViewController.fields = PFLogInFieldsUsernameAndPassword | PFLogInFieldsTwitter | PFLogInFieldsFacebook | PFLogInFieldsPasswordForgotten;
+        _loginViewController.fields = PFLogInFieldsUsernameAndPassword | PFLogInFieldsFacebook | PFLogInFieldsPasswordForgotten;
     }else if ([segue.identifier isEqualToString:@"signup"]){
         UINavigationController *navigationController = segue.destinationViewController;
         NSArray *viewControllers = navigationController.viewControllers;
         _signupViewController = viewControllers[0];
         _signupViewController.delegate = self;
-        _signupViewController.fields = PFSignUpFieldsUsernameAndPassword | PFSignUpFieldsAdditional | PFSignUpFieldsEmail | PFSignUpFieldsSignUpButton;
+        _signupViewController.fields = PFSignUpFieldsUsernameAndPassword | PFSignUpFieldsEmail | PFSignUpFieldsSignUpButton;
         
     }
 }
@@ -101,8 +105,8 @@
     if (!informationComplete) {
         [[[UIAlertView alloc] initWithTitle:NSLocalizedString(@"Missing Information", nil) message:NSLocalizedString(@"Make sure you fill out all of the information!", nil) delegate:nil cancelButtonTitle:NSLocalizedString(@"OK", nil) otherButtonTitles:nil] show];
     }else{
-        //註冊成功了才前往下一步。
-        [signUpController performSegueWithIdentifier:@"setProfile" sender:nil];
+        
+        
     }
     
     
@@ -118,12 +122,21 @@
     [[PFInstallation currentInstallation] addUniqueObject:privateChannelName forKey:kPAPInstallationChannelsKey];
     [[PFInstallation currentInstallation] saveEventually];
     
+    //隨機亂碼
+    int ValueCode = arc4random() % 999999;
+    if (ValueCode < 100000) {
+        ValueCode = arc4random() % 999999;
+    }
+    NSNumber *valueCodeNumber = [NSNumber numberWithInt:ValueCode];
+    
     //儲存用戶名稱
     [userDefaults setValue:user.username forKey:kCMUserNameString];
     [userDefaults setValue:privateChannelName forKey:kPAPUserPrivateChannelKey];
+    [userDefaults setValue:valueCodeNumber forKey:@"phoneCode"];
     [userDefaults synchronize];
     [[PFUser currentUser] setObject:user.username forKey:kPAPUserDisplayNameKey];
     [[PFUser currentUser] setObject:privateChannelName forKey:kPAPUserPrivateChannelKey];
+    [[PFUser currentUser] setObject:valueCodeNumber forKey:@"phoneCode"];
     
     PFACL *ACL = [PFACL ACL];
     [ACL setPublicReadAccess:YES];
@@ -131,7 +144,32 @@
     
     [[PFUser currentUser] saveEventually];
     
+    
+    //執行雲端代碼
+    NSString *number = @"number";
+    NSString *phoneCode = @"phoneCode";
+//    NSString *phoneNumber = @"+886912802049";
+//    NSString *ValueCode = @"897518";
+    int intNumble;
+    intNumble = [user.username intValue];
+    NSString *userPhoneNumber = [NSString stringWithFormat:@"+886%i", intNumble];
+
+    //上傳至會員資料
+    [[PFUser currentUser] setObject:valueCodeNumber forKey:@"phoneCode"];
+    [[PFUser currentUser] saveEventually:^(BOOL succeeded, NSError *error) {
+        if (succeeded) {
+            //雲端代碼
+            [PFCloud callFunctionInBackground:@"inviteWithTwilio" withParameters:@{number:userPhoneNumber, phoneCode:valueCodeNumber} block:^(id object, NSError *error) {
+                if (!error) {
+                    NSLog(@"簡訊已經送出");
+                }
+            }];
+        }
+    }];
+    
     //轉場到 註冊2 的畫面
+    //註冊成功了才前往下一步。
+    [signUpController performSegueWithIdentifier:@"setProfile" sender:nil];
     NSLog(@"loginToSet 轉場到 註冊2 的畫面");
     NSLog(@"註冊用戶為 %@", user);
 }

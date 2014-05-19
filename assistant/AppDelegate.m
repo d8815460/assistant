@@ -18,6 +18,8 @@
 #import <QuartzCore/QuartzCore.h>
 #import "AyiWellcomeViewController.h"
 #import "SetProfileViewController.h"
+#import "NGTabBarController.h"
+#import "AddPhoneNumberViewController.h"
 
 static AppDelegate *sharedDelegate;
 
@@ -140,21 +142,12 @@ static AppDelegate *sharedDelegate;
      UIRemoteNotificationTypeAlert|
      UIRemoteNotificationTypeSound];
     
+    
+    
     if (application.applicationIconBadgeNumber != 0) {
         NSLog(@"install 1");
         application.applicationIconBadgeNumber = 0;
         [[PFInstallation currentInstallation] saveInBackground];
-    }
-    
-    //如果當前用戶已經登入，直接跳過WelcomeView，來到GoogleMap
-    if (![PFUser currentUser]) {
-        
-    }else{
-        self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
-        UIStoryboard *mainStoryboard = [UIStoryboard storyboardWithName:@"Main" bundle: nil];
-        UINavigationController *mapView = (UINavigationController *)[mainStoryboard instantiateViewControllerWithIdentifier:@"mapNavigation"];
-        self.window.rootViewController = mapView;
-        [self.window makeKeyAndVisible];
     }
     
     [self handlePushUserInfo:launchOptions];
@@ -414,9 +407,10 @@ static AppDelegate *sharedDelegate;
 }
 #pragma mark - presentWelcomeViewControllerAnimated
 - (void)presentWelcomeViewControllerAnimated:(BOOL)animated {
-    UIStoryboard *storybord = [UIStoryboard storyboardWithName:@"Main" bundle:[NSBundle mainBundle]];
+    UIStoryboard *storybord = [UIStoryboard storyboardWithName:@"MainStoryboard_iPhone" bundle:[NSBundle mainBundle]];
     AyiWellcomeViewController *welcomeVC = (AyiWellcomeViewController *)[storybord instantiateViewControllerWithIdentifier:@"welcome"];
     self.window.rootViewController = welcomeVC;
+    [self.window makeKeyAndVisible];
 }
 #pragma mark - presentWelcomeViewController
 - (void)presentWelcomeViewController {
@@ -425,18 +419,42 @@ static AppDelegate *sharedDelegate;
 
 #pragma mark - 第一次登入轉場至會員第一次設定頁
 - (void)presentFirstSignInViewController{
-    UIStoryboard *mainStoryboard = [UIStoryboard storyboardWithName:@"Main" bundle: nil];
-    SetProfileViewController *firstSign = (SetProfileViewController *)[mainStoryboard instantiateViewControllerWithIdentifier:@"setProfile"];
+    UIStoryboard *mainStoryboard = [UIStoryboard storyboardWithName:@"MainStoryboard_iPhone" bundle: nil];
+    AddPhoneNumberViewController *firstSign = (AddPhoneNumberViewController *)[mainStoryboard instantiateViewControllerWithIdentifier:@"setProfile"];
     firstSign.navigationItem.leftBarButtonItem = nil;
     self.window.rootViewController = firstSign;
     [self.window makeKeyAndVisible];
 }
 #pragma mark - 轉場至Google Map
 - (void)presentGoogleMapController {
-    UIStoryboard *storybord = [UIStoryboard storyboardWithName:@"Main" bundle:[NSBundle mainBundle]];
-    UINavigationController *googleMap = (UINavigationController *)[storybord instantiateViewControllerWithIdentifier:@"mapNavigation"];
-    self.window.rootViewController = googleMap;
-    [self.window makeKeyAndVisible];
+    // Override point for customization after application launch.
+    if ([[UIDevice currentDevice] userInterfaceIdiom] == UIUserInterfaceIdiomPad) {
+        self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
+        
+        [self setupTabbariPad];
+        
+        self.window.rootViewController = self.mainVC;
+        self.window.backgroundColor = [UIColor blackColor];
+        [self.window makeKeyAndVisible];
+    } else {
+        self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
+        
+        if (![[NSUserDefaults standardUserDefaults] valueForKey:@"NavigationType"]) {
+            [[NSUserDefaults standardUserDefaults] setInteger:ADVNavigationTypeTab forKey:@"NavigationType"];
+            [[NSUserDefaults standardUserDefaults] synchronize];
+        }
+        
+        self.navigationType = (int)[[NSUserDefaults standardUserDefaults] integerForKey:@"NavigationType"];
+        if (_navigationType == ADVNavigationTypeTab) {
+            [self setupTabbar];
+        } else {
+            [self setupMenu];
+        }
+        
+        self.window.rootViewController = self.mainVC;
+        self.window.backgroundColor = [UIColor blackColor];
+        [self.window makeKeyAndVisible];
+    }
 }
 
 #pragma mark - 登出
@@ -565,7 +583,7 @@ void drawLinearGradient(CGContextRef context, CGRect rect, CGColorRef startColor
 }
 
 - (void)setupTabbar {
-    if (!self.tabbarVC) {
+    if (!_tabbarVC) {
         UIStoryboard *mainStoryboard = [UIStoryboard storyboardWithName:@"MainStoryboard_iPhone" bundle: nil];
         UINavigationController *navMag1 = [mainStoryboard instantiateViewControllerWithIdentifier:@"NearbyNav"];
         UINavigationController *navMag2 = [mainStoryboard instantiateViewControllerWithIdentifier:@"TasksNav"];
@@ -658,7 +676,7 @@ sizeOfItemForViewController:(UIViewController *)viewController
     
     UIStoryboard *mainStoryboard = [UIStoryboard storyboardWithName:@"MainStoryboard_iPhone"
                                                              bundle: nil];
-    self.mainVC = [mainStoryboard instantiateViewControllerWithIdentifier:@"NearbyNav"];
+    self.mainVC = [mainStoryboard instantiateViewControllerWithIdentifier:@"tabbarView"];
 }
 
 
@@ -677,6 +695,7 @@ sizeOfItemForViewController:(UIViewController *)viewController
     }
     
     self.window.rootViewController = self.mainVC;
+    [self.window makeKeyAndVisible];
     
     if (!cancel) {
         UIViewController *settingsVC = settingsNav.viewControllers[0];
@@ -793,7 +812,7 @@ sizeOfItemForViewController:(UIViewController *)viewController
 //#pragma mark - 轉場至Google Map
 //- (void)presentGoogleMapController {
 //    UIStoryboard *storybord = [UIStoryboard storyboardWithName:@"MainStoryboard_iPhone" bundle:[NSBundle mainBundle]];
-//    UINavigationController *googleMap = (UINavigationController *)[storybord instantiateViewControllerWithIdentifier:@"mapNavigation"];
+//    UINavigationController *googleMap = (UINavigationController *)[storybord instantiateViewControllerWithIdentifier:@"tabbarView"];
 //    self.window.rootViewController = googleMap;
 //    [self.window makeKeyAndVisible];
 //}

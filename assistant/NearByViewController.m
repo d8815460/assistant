@@ -70,7 +70,7 @@
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
     if (self) {
         // Custom initialization
-		self.className = kPAWParsePostsClassKey;
+		self.className = @"_User";
 		annotations = [[NSMutableArray alloc] initWithCapacity:10];
 		allPosts = [[NSMutableArray alloc] initWithCapacity:10];
     }
@@ -81,8 +81,7 @@
 {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
-    
-    [ADVThemeManager customizeView:self.view];
+    AppDelegate *appDelegate = (AppDelegate *)[[UIApplication sharedApplication] delegate];
     
     // Add the wall posts tableview as a subview with view containment (new in iOS 5.0):
 	self.wallPostsTableViewController = [[PAWWallPostsTableViewController alloc] initWithStyle:UITableViewStylePlain];
@@ -91,12 +90,13 @@
 	self.wallPostsTableViewController.view.frame = CGRectMake(6.0f, 215.0f, 308.0f, self.view.bounds.size.height - 215.0f);
 	[self.view addSubview:self.wallPostsTableViewController.view];
     
+    [ADVThemeManager customizeView:self.view];
 	
 	[[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(distanceFilterDidChange:) name:kPAWFilterDistanceChangeNotification object:nil];
 	[[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(locationDidChange:) name:kPAWLocationChangeNotification object:nil];
 //	[[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(postWasCreated:) name:kPAWPostCreatedNotification object:nil];
     
-	self.mapView.region = MKCoordinateRegionMake(CLLocationCoordinate2DMake(37.332495f, -122.029095f), MKCoordinateSpanMake(0.008516f, 0.021801f));
+	self.mapView.region = MKCoordinateRegionMake(CLLocationCoordinate2DMake(appDelegate.currentLocation.coordinate.latitude, appDelegate.currentLocation.coordinate.longitude), MKCoordinateSpanMake(0.008516f, 0.021801f));
 	self.mapPannedSinceLocationUpdate = NO;
 	[self startStandardUpdates];
 }
@@ -133,7 +133,7 @@
 
 - (void)distanceFilterDidChange:(NSNotification *)note {
 	CLLocationAccuracy filterDistance = [[[note userInfo] objectForKey:kPAWFilterDistanceKey] doubleValue];
-	AppDelegate *appDelegate = [[UIApplication sharedApplication] delegate];
+	AppDelegate *appDelegate = (AppDelegate *)[[UIApplication sharedApplication] delegate];
     
 	if (self.searchRadius == nil) {
 		self.searchRadius = [[PAWSearchRadius alloc] initWithCoordinate:appDelegate.currentLocation.coordinate radius:appDelegate.filterDistance];
@@ -365,7 +365,7 @@
 #pragma mark - Fetch map pins
 
 - (void)queryForAllPostsNearLocation:(CLLocation *)currentLocation withNearbyDistance:(CLLocationAccuracy)nearbyDistance {
-	PFQuery *query = [PFQuery queryWithClassName:self.className];
+	PFQuery *query = [PFQuery queryWithClassName:@"_User"];
     
 	if (currentLocation == nil) {
 		NSLog(@"%s got a nil location!", __PRETTY_FUNCTION__);

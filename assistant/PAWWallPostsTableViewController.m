@@ -56,7 +56,7 @@ static NSUInteger const kPAWTableViewMainSection = 0;
 		// Customize the table:
 
 		// The className to query on
-		self.parseClassName = kPAWParsePostsClassKey;
+		self.parseClassName = @"_User";
 
 		// The key of the PFObject to display in the label of the default cell style
 		self.textKey = kPAWParseTextKey;
@@ -127,7 +127,7 @@ static NSUInteger const kPAWTableViewMainSection = 0;
 // all objects ordered by createdAt descending.
 - (PFQuery *)queryForTable {
 	PFQuery *query = [PFQuery queryWithClassName:self.parseClassName];
-
+    
 	// If no objects are loaded in memory, we look to the cache first to fill the table
 	// and then subsequently do a query against the network.
 	if ([self.objects count] == 0) {

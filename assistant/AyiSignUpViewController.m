@@ -33,10 +33,14 @@
     if ([self.signUpView.additionalField respondsToSelector:@selector(setAttributedPlaceholder:)] && [self.signUpView.usernameField respondsToSelector:@selector(setAttributedPlaceholder:)]) {
         UIColor *color = [UIColor colorWithRed:169.0f/255.0f green:169.0f/255.0f blue:169.0f/255.0f alpha:1.0];
         self.signUpView.additionalField.attributedPlaceholder = [[NSAttributedString alloc] initWithString:@"Phone Number" attributes:@{NSForegroundColorAttributeName: color}];
-        self.signUpView.usernameField.attributedPlaceholder = [[NSAttributedString alloc] initWithString:@"Account" attributes:@{NSForegroundColorAttributeName: color}];
+        self.signUpView.usernameField.attributedPlaceholder = [[NSAttributedString alloc] initWithString:@"Phone Number" attributes:@{NSForegroundColorAttributeName: color}];
+        self.signUpView.usernameField.keyboardType = UIKeyboardTypeNumberPad;
     }else {
         NSLog(@"Cannot set placeholder text's color, because deployment target is earlier than iOS 6.0");
         // TODO: Add fall-back code to set placeholder color.
+        UIColor *color = [UIColor colorWithRed:169.0f/255.0f green:169.0f/255.0f blue:169.0f/255.0f alpha:1.0];
+        self.signUpView.usernameField.attributedPlaceholder = [[NSAttributedString alloc] initWithString:@"Phone Number" attributes:@{NSForegroundColorAttributeName: color}];
+        self.signUpView.usernameField.keyboardType = UIKeyboardTypeNumberPad;
     }
     
     self.signUpView.usernameField.autocapitalizationType = UITextAutocapitalizationTypeNone;
